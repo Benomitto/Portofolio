@@ -57,14 +57,20 @@ section {
 }
 
 img {
+	cursor:pointer;
     display: block;
     max-width: 100%;
+	border:4px solid white;
+	border-radius:10%;
+	
+	
+	}
 }
 
 strong { font-weight: var(--fw-bold) }
 
 :focus {
-    outline: 3px solid var(--clr-accent);
+    /*outline: 3px solid var(--clr-accent);*/
     outline-offset: 3px;
 }
 
@@ -394,6 +400,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 100fr));
 }
 
+
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
@@ -403,6 +410,7 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+	border-radius:50px;
 }
 
 .portfolio__item:focus {
